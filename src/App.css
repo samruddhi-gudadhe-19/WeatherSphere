@@ -1,0 +1,146 @@
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #dbeafe, #eff6ff, #e0f2fe);
+  color: #172554;
+}
+
+.header {
+  text-align: center;
+  padding: 28px 16px;
+  background: #1d4ed8;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header p {
+  margin: 8px 0 0;
+}
+
+.weather-container {
+  width: min(90%, 600px);
+  margin: 40px auto;
+  text-align: center;
+  flex: 1;
+}
+
+.weather-container h2 {
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #475569;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.search-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.search-form button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background: #1d4ed8;
+}
+
+.weather-card {
+  padding: 28px 20px;
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 12px 30px #1e3a8a18;
+}
+
+.weather-icon {
+  font-size: 4rem;
+}
+
+.weather-card h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.temperature {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.condition {
+  color: #64748b;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.detail {
+  padding: 18px 10px;
+  border-radius: 14px;
+  background: #eff6ff;
+}
+
+.detail span {
+  font-size: 1.7rem;
+}
+
+.detail p {
+  margin: 8px 0;
+  color: #475569;
+}
+
+footer {
+  padding: 18px;
+  text-align: center;
+  color: #475569;
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .weather-container {
+    margin: 25px auto;
+  }
+
+  .search-form button {
+    padding: 12px;
+  }
+
+  .weather-card {
+    padding: 22px 14px;
+  }
+}
