@@ -1,16 +1,71 @@
-# React + Vite
+# WeatherSphere 🌦️
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive weather application built with React.js that allows users to search for a city and view its current weather information.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Search weather by city name
+- Display current temperature and feels-like temperature
+- Show humidity and wind speed
+- Display atmospheric pressure
+- Show weather conditions with icons
+- Validate city names and handle invalid searches
+- Fetch weather data without requiring an API key
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Open-Meteo Weather API
+- Open-Meteo Geocoding API
+- Vite
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Prerequisites
+
+- Node.js and npm
+- Git
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/samruddhi-gudadhe-19/WeatherSphere.git
+   ```
+
+2. Open the project folder:
+
+   ```bash
+   cd WeatherSphere
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## APIs Used
+
+- **Open-Meteo Geocoding API:** Finds the selected city's location.
+- **Open-Meteo Forecast API:** Retrieves current weather information.
+
+## Author
+
+Samruddhi Gudadhe
+
+## License
+
+This project is open source and available for learning and portfolio purposes.
